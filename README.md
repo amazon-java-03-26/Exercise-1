@@ -126,3 +126,79 @@ System.out.println("High priority packages: " + highCount);
 
 
 ⸻
+
+:jigsaw: Exercise – Shipping System
+
+
+Step 1 – Create an Interface
+
+Create an interface called Shippable.
+
+Do:
+
+Add a method:
+double calculateShippingCost(double weight);
+
+
+
+Step 2 – Create Two Classes
+
+Create two classes that implement Shippable.
+
+
+
+:truck: Class 1: 
+StandardShipping
+
+Rules:
+
+Cost = weight * 1.0
+
+
+
+:zap: Class 2: 
+ExpressShipping
+
+Rules:
+
+Cost = weight * 2.5 + 5
+
+
+
+:repeat: Step 3 – Use Them Together
+
+Create a class ShippingApp with main.
+
+Do:
+
+• Create an ArrayList<Shippable>
+• Add:
+
+
+1 StandardShipping
+1 ExpressShipping
+(optionally more)
+
+
+
+:gear: Step 4 – For Loop + Polymorphism
+
+Do:
+
+• Use a for loop
+• For each object:
+
+
+Call calculateShippingCost(10) (use weight = 10)
+Print the result
+
+
+
+:brain: Optional Small Challenge
+
+• Print different messages depending on the cost:
+
+
+If cost > 20 → "Expensive shipping"
+Else → "Affordable shipping"
+
